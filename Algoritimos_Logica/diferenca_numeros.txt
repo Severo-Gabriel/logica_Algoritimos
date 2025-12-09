@@ -2,14 +2,17 @@ algoritmo "Somar_100"
 var
  A, B, DIF: REAL
 inicio
+
 ESCREVA ("Digite um número para A:")
-LEIA (A)
+ LEIA (A)
+ 
 ESCREVA ("Digite um número para B:")
-LEIA (B)
+ LEIA (B)
+
 SE (A > B) ENTAO
-DIF:= A - B
-SENAO
-DIF:= B - A
-FIMSE
-ESCREVAL ("A diferen,a do maior para o menor é: ", DIF)
+  DIF:= A - B
+ SENAO
+  DIF:= B - A
+ FIMSE
+  ESCREVAL ("A diferen,a do maior para o menor é: ", DIF)
 fimalgoritmo
