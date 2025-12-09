@@ -1,0 +1,15 @@
+algoritmo "Somar_100"
+var
+ A, B, SOMA: REAL
+inicio
+ESCREVA ("Digite um número para A:")
+LEIA (A)
+ESCREVA ("Digite um número para B:")
+LEIA (B)
+SE (A > B) ENTAO
+SOMA:= A + 100
+SENAO
+SOMA:= B + 100
+FIMSE
+ESCREVAL ("O maior número somado com 100 é: ", SOMA)
+fimalgoritmo
