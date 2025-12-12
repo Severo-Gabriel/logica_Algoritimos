@@ -1,0 +1,22 @@
+algoritmo "Somar_100"
+
+var
+   A, B, DIF: real
+
+inicio
+
+   Escreva("Digite um número para A: ")
+   Leia(A)
+   
+   Escreva("Digite um número para B: ")
+   Leia(B)
+
+   Se (A > B) entao
+      DIF <- A - B
+   Senao
+      DIF <- B - A
+   FimSe
+
+   Escreval("A diferença do maior para o menor é: ", DIF)
+
+fimalgoritmo
