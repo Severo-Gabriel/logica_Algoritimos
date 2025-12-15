@@ -7,21 +7,27 @@ inicio
    escreva("Digite a quantidade de termos: ")
    leia(n)
 
-   a <- 1
-   b <- 1
+   se (n < 1) entao
+      escreva("O valor informado precisa ser igual ou maior que 1")
+   senao
 
-   se (n >= 1) entao
-      escreva(a, " ")
+      a <- 1
+      b <- 1
+
+      se (n >= 1) entao
+         escreva(a, " ")
+      fimse
+
+      se (n >= 2) entao
+         escreva(b, " ")
+      fimse
+
+      para i de 3 ate n faca
+         c <- a + b
+         escreva(c, " ")
+         a <- b
+         b <- c
+      fimpara
+
    fimse
-
-   se (n >= 2) entao
-      escreva(b, " ")
-   fimse
-
-   para i de 3 ate n faca
-      c <- a + b
-      escreva(c, " ")
-      a <- b
-      b <- c
-   fimpara
 fimalgoritmo
